@@ -1,0 +1,103 @@
+.meet-the-board{
+    padding: 0 7.5rem 7rem 7.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.meet-the-board > h1{
+    font-size: 3rem;
+    color: #00629b;
+
+}
+.meet-the-board .cards-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 4rem;
+    border-radius: 14px;
+    
+   
+}
+.board-member-card{
+    flex:1;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    overflow: hidden;
+    padding: 2rem 1rem;
+    margin: 0  0.2rem;
+    border-radius: 14px;
+    transition: flex 0.8s ease-in-out 0.1s , z-index 0.3s;
+}
+.board-member-card:hover{
+    flex: 1 1 20vw;
+    z-index: 2;
+    cursor: pointer;
+}
+.board-member-card:hover .board-member-overlay{
+    background-color: rgba(0, 0, 0, 0);
+    transition: all ease-in-out 200ms;
+}
+.board-member-card img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    image-rendering:smooth;
+}
+
+.board-member-card > h1 , .board-member-card > h2{
+    z-index: 2;
+    
+    
+}
+.board-member-title{
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #00629b;
+}
+
+.board-member-name{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: white;
+}
+.board-member-overlay{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 768px){
+    .meet-the-board{
+        padding: 0 3rem 7rem 3rem;
+    
+    }
+    .meet-the-board > h1{
+        font-size: 2rem;
+        color: #00629b;
+    
+    }
+    .board-member-name{
+        font-size: 0.5rem;
+    }
+    .board-member-title{
+        font-size: 0.7rem;
+    }
+    .board-member-card{
+        height: 40vh;
+        padding: 0.5rem;
+    }
+}

@@ -1,0 +1,39 @@
+.what-is-ieee-text{
+    padding: 7rem 7.5rem;
+}
+.about-ieee-sb-text{
+    padding: 0rem 7.5rem 7rem 7.5rem;
+}
+.what-is-ieee-text h1,.about-ieee-sb-text h1{
+    font-size: 4rem;
+    font-weight: 800;
+    color: #00629b;
+}
+
+.what-is-ieee-text p,.about-ieee-sb-text p{
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+    color: #3a3a3a;
+}
+@media only screen and (max-width: 768px){
+    .what-is-ieee-text{
+        padding: 7rem 3rem;
+    }
+    .about-ieee-sb-text{
+        padding: 0rem 3rem 7rem 3rem;
+    }
+    .what-is-ieee-text h1,.about-ieee-sb-text h1{
+        font-size: 2rem;
+        font-weight: 800;
+        color: #00629b;
+        text-align: center;
+
+    }
+    .what-is-ieee-text p,.about-ieee-sb-text p{
+        margin-top: 2.5rem;
+        font-size: 1rem;
+        color: #3a3a3a;
+        text-align: center;
+    }
+    
+}

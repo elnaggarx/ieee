@@ -1,0 +1,45 @@
+.about-canvas{
+    height: 50vh;
+    z-index: 5;
+}
+.about-hero{
+    height: 50vh;
+    width: 100%;
+    padding: 0 7.5rem;
+    display: flex;
+    align-items: center;
+    
+}
+.about-overlay{
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+}
+.about-hero h1{
+    color: white;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-top: 5%;
+}
+@media only screen and (max-width: 768px){
+    .about-hero{
+
+        padding: 0 3rem;
+
+    }
+    .about-hero h1{
+        font-size: 3rem;
+        text-align: center;
+
+    }
+    .about-hero{
+        justify-content: center;
+    }
+}
